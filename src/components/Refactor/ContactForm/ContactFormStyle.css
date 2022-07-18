@@ -1,0 +1,172 @@
+.form__section {
+    width: 100vw;
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.form__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 73px;
+    letter-spacing: -0.04em;
+    margin-bottom: 32px;
+}
+
+.input__name, .input__email, .input__enquiry, .input__subject {
+    width: 373px;
+    height: 60px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    margin-bottom: 32px;
+    padding: 9px 18px 10px
+
+}
+
+.input__messages {
+    width: 373px;
+    height: 200px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    margin-bottom: 32px;
+    padding: 9px 18px 10px
+}
+
+.input__name, .input__email, .input__enquiry, .input__subject, .input__messages::-webkit-input-placeholder {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;    
+    letter-spacing: -0.02em;
+    color: rgba(0, 0, 0, 0.6);
+    opacity: 0.8;
+}
+
+.button__submit {
+    width: 373px;
+    height: 64px;
+    background: #000000;
+    border-radius: 16px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+
+.cooker__picture {
+    display: none;
+}
+
+#input__title {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.6);
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .input__name, .input__email, .input__enquiry, .input__subject, .input__messages {
+        width: 650px;
+    }
+    
+    .button__submit {
+        width: 650px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cooker__picture {
+        display: inline;
+        width: 315px;
+        height: 460px;
+    }
+
+    .form__title {
+        align-self: center;
+    }
+
+    .input__name, .input__email, .input__enquiry, .input__subject {
+        width: 333px;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    .input__messages {
+        width: 686px;
+        height: 250px;
+    }
+
+    .button__submit {
+        width: 186px;
+    }
+
+    .title__section {
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    }
+
+    .form__section {
+        max-width: 100%;
+        display: grid;
+        grid-column-gap: 20px;
+        grid-row-gap: 0px;
+    }
+        
+    .image__section { grid-area: 2 / 1 / 5 / 2; }
+    .input__section__name { grid-area: 2 / 2 / 3 / 3; }
+    .input__section__email { grid-area: 2 / 3 / 3 / 4; }
+    .input__section__subject { grid-area: 3 / 2 / 4 / 3; }
+    .input__section__enquiryt { grid-area: 3 / 3 / 4 / 4; }
+    .input__section__messages { grid-area: 4 / 2 / 5 / 4; }
+    .button__submit { grid-area: 5 / 2 / 6 / 3; }
+    .title__section { grid-area: 1 / 1 / 2 / 4; }
+}
+
+@media screen and (min-width: 1280px) {
+    .cooker__picture {
+        display: inline;
+        width: 400px;
+        height: 460px;
+    }
+
+    .form__title {
+        align-self: center;
+    }
+
+    .input__name, .input__email, .input__enquiry, .input__subject {
+        width: 373px;
+    }
+
+    .input__messages {
+        width: 796px;
+        height: 250px;
+    }
+
+    .button__submit {
+        width: 398px;
+    }
+
+    .form__section {
+        grid-column-gap: 28px;
+    }
+}

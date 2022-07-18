@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Ubuntu:wght@400;500&display=swap");
+
+.cardContainer__card {
+  width: 52%;
+}
+.cardContainer__img {
+  margin-bottom: 1.813rem;
+  width: 100%;
+}
+.cardContainer__text {
+  font-family: "Inter", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.cardContainer__author {
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .cardContainer__card {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .cardContainer__img {
+    max-width: 45%;
+    padding-right: 1.5rem;
+  }
+  .cardContainer__group {
+    width: 196px;
+  }
+}

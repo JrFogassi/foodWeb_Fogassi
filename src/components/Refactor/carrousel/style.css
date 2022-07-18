@@ -1,0 +1,138 @@
+.carrossel {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px
+    
+}
+
+.carrossel__Title {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.carrossel__Slides__Food {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.carrossel__Food__Img {
+    border-radius: 16px;
+}
+
+.carrossel__Slides__Food::-webkit-scrollbar {
+    display: none;
+}
+
+.carrossel__Container {
+   
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+   
+    
+    
+}
+
+.left__Arrow {
+    top: 35%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    position: absolute;
+    left: -10px;
+    z-index: 2;
+}
+
+.right__Arrow {
+    top: 35%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    position: absolute;
+    right: 10px;
+    z-index: 2;
+}
+
+.logica {
+    min-width: 290px;
+    margin-right: 40px;
+}
+
+.logica:nth-child(4){
+    margin-right: 0;
+}
+
+.content {
+    width: 290px;
+}
+
+.carrossel__Descriptions {
+    display: flex;
+    margin-top: 8%;
+    
+}
+
+.clock__Descript {
+    margin-top: 1%;
+}
+
+.fork__Icon {
+    padding-left: 8%;
+}
+.fork__Descript {
+    margin-top: 1%;
+}
+
+/* .descriptions img {
+    
+    margin-top: 10px;
+}  */
+
+ /* .like__button {
+   
+} */
+
+.ellipse {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 223px;
+   
+}
+
+.default__heart {
+    position: absolute;
+    margin-top: 26px;
+    margin-left: 236px;
+}
+
+.red__heart {
+    position: absolute;
+    margin-top: 26px;
+    margin-left: 236px;
+    filter: invert(46%) sepia(77%) saturate(2172%) hue-rotate(329deg) brightness(112%) contrast(104%);
+}
+
+@media (max-width: 1024px) {
+    .carrossel__Title {
+        display: none;
+    }
+
+}
+
+@media (min-width: 800px) {
+    .carrossel__Slides__Food {
+        margin-left: 80px;
+    }
+}
+
+@media (min-width: 420px) {
+    
+    .right__Arrow {
+        display: none;
+    }
+    .left__Arrow {
+        display: none;
+    }
+}
